@@ -4,7 +4,11 @@ pub fn leave_game(
     client: &Client,
     user: Pubkey,
     game: Pubkey,
+<<<<<<< HEAD
     _color: sol_chess::Color,
+=======
+    color: sol_chess::Color,
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
 ) -> ClientResult<()> {
     let leave_game_ix = Instruction {
         program_id: sol_chess::ID,

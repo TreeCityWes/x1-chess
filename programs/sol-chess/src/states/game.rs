@@ -386,6 +386,7 @@ impl Game {
         self.time_control
             .update_time_control(color, current_timestamp)
     }
+<<<<<<< HEAD
 
     pub fn get_player_pubkey(&self, color: Color) -> Pubkey {
         match color {
@@ -393,6 +394,8 @@ impl Game {
             Color::Black => self.black.unwrap(),
         }
     }
+=======
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
 }
 
 pub trait GameAccount {

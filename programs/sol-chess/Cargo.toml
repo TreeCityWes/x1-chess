@@ -17,6 +17,7 @@ default = []
 
 [dependencies]
 anchor-lang = "0.26.0"
+<<<<<<< HEAD
 # Commenting out clockwork-sdk as it might be causing issues
 # clockwork-sdk = "1.4.2"
 
@@ -25,3 +26,6 @@ overflow-checks = true
 lto = "fat"
 codegen-units = 1
 opt-level = 3
+=======
+clockwork-sdk = "1.4.2"
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0

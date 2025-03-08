@@ -26,6 +26,7 @@ impl<'info> MovePiece<'info> {
         } = self;
         let color = game.get_current_player_color();
 
+<<<<<<< HEAD
         // Check if the game is already over
         require!(
             game.game_state.is_still_going(),
@@ -66,6 +67,13 @@ impl<'info> MovePiece<'info> {
             return Err(CustomError::TimeHasRunOut.into());
         }
 
+=======
+        require!(
+            game.has_time(color, clock.unix_timestamp),
+            CustomError::TimeHasRunOut
+        );
+
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
         require!(
             user.key() == game.get_current_player_pubkey(),
             CustomError::NotUsersTurn
@@ -92,7 +100,11 @@ impl<'info> MovePiece<'info> {
         if game.in_checkmate(color.get_opposite()) {
             game.set_winner(color);
             if game.has_wager() {
+<<<<<<< HEAD
                 user.increase_balance(game.get_wager() * 2);
+=======
+                user.increase_balance(game.get_wager() * 2)
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
             }
 
             if game.is_rated() {
@@ -101,7 +113,10 @@ impl<'info> MovePiece<'info> {
             }
         }
 
+<<<<<<< HEAD
         // Update time control with the current timestamp
+=======
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
         game.update_time_control(color, clock.unix_timestamp);
 
         Ok(())

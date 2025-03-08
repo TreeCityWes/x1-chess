@@ -1,7 +1,14 @@
 use anchor_lang::prelude::*;
+<<<<<<< HEAD
 use std::mem::size_of;
 
 declare_id!("7m61iDSKwcjvMSuKCSAY2coPnfXYNHrfhR4fRYRK9Av8");
+=======
+use anchor_lang::solana_program::instruction::Instruction;
+use std::mem::size_of;
+
+declare_id!("9PsU5ntn26Bos8FRtwupQbvoYbchzt8bdQoxLym7AHWB");
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
 
 pub mod contexts;
 pub mod error;
@@ -54,8 +61,11 @@ pub mod sol_chess {
     pub fn offer_draw(ctx: Context<OfferDraw>) -> Result<()> {
         ctx.accounts.process()
     }
+<<<<<<< HEAD
     
     pub fn check_time_forfeit(ctx: Context<CheckTimeForfeit>) -> Result<()> {
         ctx.accounts.process()
     }
+=======
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
 }

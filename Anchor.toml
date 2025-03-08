@@ -1,9 +1,16 @@
 [features]
 seeds = false
 skip-lint = false
+<<<<<<< HEAD
 
 [toolchain]
 anchor_version = "0.26.0"
+=======
+[programs.localnet]
+sol_chess = "9PsU5ntn26Bos8FRtwupQbvoYbchzt8bdQoxLym7AHWB"
+[programs.devnet]
+sol_chess = "9PsU5ntn26Bos8FRtwupQbvoYbchzt8bdQoxLym7AHWB"
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
 
 [registry]
 url = "https://api.apr.dev"

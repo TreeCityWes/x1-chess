@@ -26,6 +26,7 @@ pub enum CustomError {
     AlreadyInGame,
     #[msg("Already Offered Draw")]
     AlreadyOfferedDraw,
+<<<<<<< HEAD
     #[msg("Time Has Run Out")]
     TimeHasRunOut,
     #[msg("Time Has Not Run Out")]
@@ -34,4 +35,8 @@ pub enum CustomError {
     NotAdversaryTurn,
     #[msg("Game Already Over")]
     GameAlreadyOver,
+=======
+    #[msg("TimeHasRunOut")]
+    TimeHasRunOut,
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
 }

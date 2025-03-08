@@ -20,6 +20,7 @@ impl<'info> InitializeGame<'info> {
             game, user, clock, ..
         } = self;
 
+<<<<<<< HEAD
         // If the game has a wager, check if the user has sufficient balance
         if game_config.has_wager() {
             require!(
@@ -31,6 +32,8 @@ impl<'info> InitializeGame<'info> {
             user.decrease_balance(game_config.get_wager());
         }
 
+=======
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
         game.new(
             game_config,
             clock.unix_timestamp,

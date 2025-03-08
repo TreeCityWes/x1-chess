@@ -11,6 +11,28 @@
 
 </div>
 
+<<<<<<< HEAD
+=======
+## Installation
+
+```sh
+anchor build
+anchor deploy
+```
+
+## Testing
+
+```sh
+anchor test
+// OR
+cargo run ./client/
+```
+
+## Note 
+
+Anchor will generate a broken idl, use the one provided in `/idl`
+
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
 ## Features
 |         Feature         | Implemented |
 |-------------------------|:-----------:|
@@ -20,6 +42,7 @@
 | Castling                |      ✅     |
 | Promotion               |      ✅     |
 | Elo                     |      ✅     |
+<<<<<<< HEAD
 | Time Control            |      ✅     |
 | Token Wagers            |      ✅     |
 | Elo NFTs                |      ❌     |
@@ -430,3 +453,15 @@ Anchor will generate a broken idl, use the one provided in `/idl`
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+=======
+| Time Control            |      ❌     |
+
+
+## Propositions
+|         Feature         | Implemented |
+|-------------------------|:-----------:|
+| Tokens Wagers           |      ❌     |
+| Elo NFTs                |      ❌     |
+| Chess Bot with Clockwork|      ❌     |
+| Tournaments             |      ❌     |
+>>>>>>> 012776b1ce9a1e8c7c9a0ef15c03446655027bd0
